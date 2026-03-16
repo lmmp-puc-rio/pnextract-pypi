@@ -26,7 +26,7 @@ platform = [tag.platform for tag in sys_tags() if tag.platform.startswith("manyl
 
 setup(
     cmdclass={"build_py": build_py},
-    package_dir={"": "src"},
+    package_dir={"pnextract": "src/pnextract"},
     package_data={"pnextract": ["pnextract*", "voxelImageProcess*"]},
     options={"bdist_wheel": {"python_tag": "py3", "plat_name": platform}},
 )
